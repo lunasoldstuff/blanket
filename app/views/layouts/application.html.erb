@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <title>Blanket</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body class="bg-white dark:bg-gray-800">
+    <div class="flex h-screen">
+      <%= yield %>
+    </div>
+  </body>
+</html>
